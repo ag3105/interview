@@ -3,7 +3,18 @@
 .cmp-image__image {}
 .cmp-image__title {}
 
+ figure {
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 500px;
+  margin: auto;
+}
+
 figcaption {
-  display: table-caption;
-  caption-side: top;
+  background-color: #000000;
+  color: #FFFFFF;
+  font: italic large sans-serif;
+  padding: 3px;
+  text-align: center;
 }

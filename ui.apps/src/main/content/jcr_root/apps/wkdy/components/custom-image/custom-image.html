@@ -11,6 +11,15 @@
        class="cmp-image__link"
        data-sly-attribute="${image.imageLink.htmlAttributes}"
        data-cmp-clickable="${image.data ? true : false}">
+        <figure>
+            <img srcset="${image.srcset}" src="${image.src}"
+                 loading="${image.lazyEnabled ? 'lazy' : 'eager'}"
+                 class="cmp-image__image cmp-image__image@tablet"
+                 itemprop="contentUrl"
+                 width="${image.width}" height="${image.height}"
+                 alt="${image.alt || true}" title="${image.displayPopupTitle && image.title}"/>
+            <figcaption>${image.caption}</figcaption>
+        </figure>
         <img srcset="${image.srcset}" src="${image.src}"
              loading="${image.lazyEnabled ? 'lazy' : 'eager'}"
              class="cmp-image__image cmp-image__image@tablet"
