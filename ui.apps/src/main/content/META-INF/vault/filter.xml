@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/wkdy/clientlibs"/>
+    <filter root="/apps/wkdy/components"/>
+    <filter root="/apps/wkdy/i18n"/>
+</workspaceFilter>
